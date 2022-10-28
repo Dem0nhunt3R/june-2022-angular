@@ -1,0 +1,3 @@
+<div *ngFor="let item of fakeArray(length);let i =index" class="comment-details">
+  <span *ngIf="comment?.id===i+1">{{comment.id}}. {{comment.body}}</span>
+</div>

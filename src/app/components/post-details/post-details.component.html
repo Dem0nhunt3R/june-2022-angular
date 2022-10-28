@@ -1,0 +1,8 @@
+<!--<div *ngIf="post">-->
+<!--  <h4>{{post.id}}. {{post.title}}</h4>-->
+<!--  <h2>{{post.body}}</h2>-->
+<!--</div>-->
+
+<div *ngFor="let item of fakeArray(length); let i=index" class="post-details">
+  <span *ngIf="post?.id===i+1">{{post.id}}-{{post.body}}</span>
+</div>

@@ -1,0 +1,10 @@
+<div class="commentsBox">
+  <div>
+    <app-comment
+      *ngFor="let comment of comments" [comment]="comment" [length]="comments.length">
+    </app-comment>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div *ngFor="let item of fakeArr(length);let i=index" class="user-details">
+    <div *ngIf="i+1===user?.id" >{{user.email}}</div>
+</div>
+

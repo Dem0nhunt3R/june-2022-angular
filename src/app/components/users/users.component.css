@@ -1,0 +1,7 @@
+.user-box {
+  display: flex;
+}
+
+.user-box > div {
+  width: 50%;
+}

@@ -1,0 +1,8 @@
+<div class="posts-box">
+  <div>
+    <app-post *ngFor="let post of posts" [post]="post" [length]="posts.length"></app-post>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
