@@ -1,0 +1,4 @@
+<div *ngIf="user">
+  <span>{{user.id}}. {{user.name}}</span>
+  <button (click)="getDetails(user.id)">details</button>
+</div>

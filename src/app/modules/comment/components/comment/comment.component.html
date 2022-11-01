@@ -1,0 +1,4 @@
+<div *ngIf="comment">
+  <span>{{comment.id}}. {{comment.name}}</span>
+  <button (click)="getDetails(comment.id)">details</button>
+</div>

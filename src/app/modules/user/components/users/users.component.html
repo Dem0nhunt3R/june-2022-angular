@@ -1,0 +1,8 @@
+<div class="users-box">
+  <div style="width: 50%">
+    <app-user *ngFor="let user of users" [user]="user"></app-user>
+  </div>
+  <div style="width: 50%">
+    <router-outlet></router-outlet>
+  </div>
+</div>

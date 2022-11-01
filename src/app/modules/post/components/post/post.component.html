@@ -1,0 +1,4 @@
+<div *ngIf="post">
+  <span>{{post.id}}. {{post.title}}</span>
+  <button (click)="getDetails(post.id)">details</button>
+</div>

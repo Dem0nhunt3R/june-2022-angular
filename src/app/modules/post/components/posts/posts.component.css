@@ -1,0 +1,7 @@
+.post-box {
+  display: flex;
+}
+
+.post-box > div {
+  width: 50%;
+}
