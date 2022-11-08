@@ -1,0 +1,5 @@
+<div>
+  <app-car-form [carForUpdate]="carForUpdate" (liftCar)="getCar($event)"></app-car-form>
+  <hr>
+  <app-car *ngFor="let car of cars" [car]="car" (liftCarForUpdate)="getCarForUpdate($event)"></app-car>
+</div>

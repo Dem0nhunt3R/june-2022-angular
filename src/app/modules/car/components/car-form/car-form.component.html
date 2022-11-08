@@ -1,0 +1,17 @@
+<div>
+  <form [formGroup]="form">
+    <div>
+      <label>Model: <input type="text" formControlName="model" placeholder="model"></label>
+      <div *ngIf="form.controls['model']['errors']">{{form.controls['model']['errors']|json}}</div>
+    </div>
+    <div>
+      <label>Price: <input type="text" formControlName="price" placeholder="price"></label>
+      <div *ngIf="form.controls['price']['errors']">{{form.controls['price']['errors']|json}}</div>
+    </div>
+    <div>
+      <label>Year: <input type="text" formControlName="year" placeholder="year"></label>
+      <div *ngIf="form.controls['year']['errors']">{{form.controls['year']['errors']|json}}</div>
+    </div>
+    <button [disabled]="form.invalid" (click)="save()">save</button>
+  </form>
+</div>

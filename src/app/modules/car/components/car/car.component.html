@@ -1,0 +1,5 @@
+<div *ngIf="car">
+  <p>{{car.id}}. model: {{car.model}} -- year: {{car.year}} -- price: {{car.price}}</p>
+  <button (click)="update(car.id)">update</button>
+  <button>delete</button>
+</div>
